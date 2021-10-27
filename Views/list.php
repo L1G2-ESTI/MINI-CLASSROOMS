@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<title>Professeurs & modules</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="../assets/css/prof.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/prof.css">
 </head>
 <body>
 	<header>
@@ -26,7 +26,7 @@
 	<section>
 		<div class="baniere"></div>
 		<div>
-			<img class="profil-prof" src="../assets/img/prof.jpeg" width="150px" height="150px">
+			<img class="profil-prof" src="assets/img/prof.jpeg" width="150px" height="150px">
 		</div>
 	</section>
 
@@ -36,19 +36,15 @@
 				<h3>DAMA RAKOTOARINAIVO</h3>
 				<p style="margin: 20px 0px;">Je suis votre professeur de Français du coup n'hésiter pas à me poser des questions.</p>
 				<div class="reseaux">
-					<img src="../assets/img/logo/facebook.png" width="20px" height="20px">
-					<li><a href="#">Facebook</a></li>
-				</div>
-				<div class="reseaux">
-					<img src="../assets/img/logo/g+.png" width="20px" height="20px">
+					<img src="assets/img/logo/g+.png" width="20px" height="20px">
 					<li><a href="#">Gmail</a></li>
 				</div>
 				<div class="reseaux">
-					<img src="../assets/img/logo/linkedin.png" width="20px" height="20px">
+					<img src="assets/img/logo/linkedin.png" width="20px" height="20px">
 					<li><a href="#">Linkedin</a></li>
 				</div>
 				<div class="reseaux">
-					<img src="../assets/img/logo/4sq.png" width="20px" height="20px">
+					<img src="assets/img/logo/4sq.png" width="20px" height="20px">
 					<li>Amboditsiry, Madagascar</li>
 				</div>
 				<input type="submit" name="envoie" value="Envoyer Mail">
