@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<title>Acceuil Etudiant</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="../assets/css/prof.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/prof.css">
 </head>
 <body>
 	<!-- <header>
