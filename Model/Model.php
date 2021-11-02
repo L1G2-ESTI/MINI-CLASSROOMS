@@ -71,7 +71,7 @@
             try{
                 $bdd = $this->dbconnect();
 
-                $req =' SELECT nom_etud , pre_etud FROM etudiant 
+                $req =' SELECT nom_etud , pre_etud, photo FROM Etudiant 
                         WHERE mail_etud = "'.$email.'" 
                     ' ;
 
@@ -98,4 +98,4 @@
         }
     }
     
-?>
+?> 

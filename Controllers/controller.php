@@ -12,8 +12,15 @@
     function loginEtudiant($email,$password){
         $query = new query_data();
         $log = $query->loginEtudiant($email,sha1($password)); 
+        $nom = $query->nomEtudiant($email);
+        $cours = $query->fetchCours();
+        $user_nom = $nom->fetch();
         $user_info = $log->fetch();
         if(!(empty($user_info))){
+            // echo "<pre>";
+            // print_r($user_nom);
+            // echo "<br>";
+            // print_r($user_cours);
             require("Views/acceuilEtudiant.php");
         }else{
             require('Views/login.php');   
@@ -23,13 +30,8 @@
     function loginProf($email,$password){
         $query = new query_data();
         $log = $query->loginProf($email,sha1($password));
-        $nom = $query->nomEtudiant($email);
-        $cours = $query->fetchCours();
-        $user_nom = $nom->fetch();
-        $user_cours = $cours->fetchAll();
         $user_info = $log->fetch();
         if(!(empty($user_info))){
-
             require("Views/modification.php");
         }else{
             require('Views/login.php');   
