@@ -14,7 +14,12 @@
 			<h1 class="log_titre"> Sign in </h1>
 	  		<input type="email" placeholder="Email" class="champ" name="email" required> 
 	  		<input type="password" placeholder="Password" class="champ" name="password" required>
-	  		<p class="forgot_pass"><a href="">Forgot your password ?</a></p>
+			<select name="categories">
+				<option>etudiant</option>
+				<option>administrateur</option>
+				<option>professeur</option>
+			</select>
+			<p class="forgot_pass"><a href="">Forgot your password ?</a></p>
 	  		<input type="submit" class="boutton_login" value="VALIDER">
 		</div>
 		<div class="content_right">
