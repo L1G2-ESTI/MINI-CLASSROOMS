@@ -66,6 +66,36 @@
                 echo $e->getMessage();
             }
         }
+
+        public function nomEtudiant($email){
+            try{
+                $bdd = $this->dbconnect();
+
+                $req =' SELECT nom_etud , pre_etud FROM etudiant 
+                        WHERE mail_etud = "'.$email.'" 
+                    ' ;
+
+                $result = $bdd->prepare($req);
+                $result->execute();
+                return $result;
+            }catch(Exception $e){
+                echo $e->getMessage();
+            }
+        }
+
+        public function fetchCours(){
+            try{
+                $bdd = $this->dbconnect();
+
+                $req =' SELECT * FROM Modules ' ;
+
+                $result = $bdd->prepare($req);
+                $result->execute();
+                return $result;
+            }catch(Exception $e){
+                echo $e->getMessage();
+            }
+        }
     }
     
 ?>
