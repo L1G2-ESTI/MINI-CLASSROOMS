@@ -1,0 +1,124 @@
+body{
+	margin: 0px 20px;
+}
+/*=======NAVIGATION=======*/
+nav{
+	width: 98%;
+	position: fixed;
+	background: white;
+	z-index: 3;
+}
+nav ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+a, li{
+	list-style-type: none;
+	text-decoration: none;
+}
+nav ul li{
+	margin-right: 70px;
+}
+nav ul .img-profil{
+	margin-left: 800px;
+}
+
+header .connexion{
+	margin-left: 85%;
+}
+/*======= BANIERE========*/
+section .baniere{
+	height: 400px;
+	background: url("../img/header.jpg") no-repeat;
+	background-size: cover;
+	margin-top: 70px;
+}
+
+
+/*========PUBLICATION========*/
+.container{
+	margin-top: 70px;
+	height: 600px;
+	margin-bottom: 30px;
+	display: flex;
+	flex-direction: row;
+}
+
+.container .selection{
+	background-color: blueviolet;
+	border: 1px solid blueviolet;
+	flex: 1;
+	height: 600px;
+}
+
+.container .publication{
+	border: 1px solid greenyellow;
+	flex: 3;
+	height: 600px;
+	flex-direction: column;
+}
+/*HEAD PUBLICATION*/
+.container .publication .head{
+	height: 70px;
+	display: flex;
+}
+
+.container .publication figure{
+	margin: 0px;
+	padding: 0px;
+}
+.container .publication .head img{
+	border-radius: 50px;
+	margin: 0px 15px;
+}
+.container .publication .information h2{
+	padding: 0px;
+	margin: 0px;
+	height: 10px;
+	font-size: 28px;
+
+}
+.container .publication .information p{
+	font-size: 18px;
+}
+.container .publication .head{
+	flex: 1;
+}
+.container .publication .information{
+	margin: 5px 0px;
+	flex: 16;
+}
+.container .publication .menu{
+	flex: 1;
+}
+
+
+/*DESCRIPTION PUBLICATION*/
+.container .publication .description{
+	height: 90px;
+}
+
+.container .publication .description p{
+	margin: 5px 25px 5px 15px;
+	font-size: 19px;
+	flex-wrap: wrap;
+}
+/*PHOTO PUBLICATION*/
+.container .publication .photo-pub{
+	height: 380px;
+}
+.container .publication .photo-pub img{
+
+}
+/*COMMENTAIRE PUBLICATION*/
+.container .publication .commentaire{
+	height: 51px;
+}
+.container .publication .commentaire textarea{
+	width: 1000px;
+	height: 35px;
+	margin-top: 5px;
+	padding: 5px;
+	border-radius: 10px;
+}
