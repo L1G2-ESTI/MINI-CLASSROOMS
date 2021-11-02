@@ -14,7 +14,7 @@
         $log = $query->loginEtudiant($email,sha1($password)); 
         $user_info = $log->fetch();
         if(!(empty($user_info))){
-            require("Views/list.php");
+            require("Views/acceuilEtudiant.php");
         }else{
             require('Views/login.php');   
         }
@@ -22,9 +22,14 @@
 
     function loginProf($email,$password){
         $query = new query_data();
-        $log = $query->loginProf($email,sha1($password)); 
+        $log = $query->loginProf($email,sha1($password));
+        $nom = $query->nomEtudiant($email);
+        $cours = $query->fetchCours();
+        $user_nom = $nom->fetch();
+        $user_cours = $cours->fetchAll();
         $user_info = $log->fetch();
         if(!(empty($user_info))){
+
             require("Views/modification.php");
         }else{
             require('Views/login.php');   
