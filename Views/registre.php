@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Registre des elèves</title>
-	<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body id="body_registre">
 	 <div class="reg_main">
