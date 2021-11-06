@@ -3,6 +3,54 @@ body{
     background:#F5F5F5;
     
 }
+/*NAV*/
+.head-profil{
+  display: flex;
+  flex-direction: row;
+}
+
+.head-profil .img-profil{
+  margin-left: 500px;
+}
+
+.head-profil .img-profil{
+  border-radius: 50px;
+}
+
+.head-profil .img-profil:hover{
+  border: none;
+  background-color: transparent;
+}
+nav ul{
+  display: flex;
+  flex-direction: column;
+}
+a, li{
+  list-style-type: none;
+  text-decoration: none;
+}
+
+nav ul{
+  margin-top: 110px;
+}
+nav ul .nav-menu{
+  padding-bottom: 20px;
+}
+
+nav ul .nav-menu a{
+  color: rgb(21, 182, 200);
+  font-size: 19px;
+  padding: 7px;
+}
+
+nav ul .nav-menu a:hover, nav ul .nav-menu a:focus{
+  border: 1px solid rgb(21, 182, 200);
+  color: white;
+  background-color: rgb(21, 182, 200);
+  border-radius: 20px;
+}
+
+
 /* Candidate List */
 .candidate-list {
   background: #ffffff;

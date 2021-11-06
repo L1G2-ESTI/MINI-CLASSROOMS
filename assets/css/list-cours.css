@@ -12,6 +12,10 @@ padding:15px 15px 15px 30px;
 .document-left-list,.images-part{
 margin-top: -43px;
 }
+.document-left-list .document-list{
+	margin-top: 50px;
+	cursor: pointer;
+}
 .document-left-list .document-list i{
 font-size:45px;
 padding:50px;
@@ -38,4 +42,51 @@ width: 100%;
 .document-list,.images-list{
 margin-top:10px;
 }
+}
+
+nav{
+	width: 98%;
+	background: white;
+}
+nav ul{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+a, li{
+	list-style-type: none;
+	text-decoration: none;
+}
+
+nav ul .nav-menu{
+	padding: 10px 0px;
+}
+
+nav ul .nav-menu a{
+	color: rgb(21, 182, 200);
+	font-size: 19px;
+}
+
+nav ul .nav-menu a:hover, nav ul .nav-menu a:focus{
+	border: 1px solid rgb(21, 182, 200);
+	color: white;
+	background-color: rgb(21, 182, 200);
+	border-radius: 20px;
+	text-decoration: none;
+}
+
+.img-profil{
+	margin-left: 980px;
+	margin-top: 10px;
+	position: absolute;
+	z-index: 4;
+}
+
+.img-profil a img{
+	border-radius: 50px;
+}
+
+.img-profil a img:hover{
+	border: none;
+	background-color: transparent;
 }

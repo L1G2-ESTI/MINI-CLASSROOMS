@@ -47,12 +47,9 @@ nav ul .img-profil a img{
 
 nav ul .img-profil a img:hover{
 	border: none;
-	background-color: red;
+	background-color: transparent;
 }
 
-header .connexion{
-	margin-left: 85%;
-}
 /*======= BANIERE========*/
 section .baniere{
 	height: 400px;
@@ -158,5 +155,6 @@ section .baniere{
 	background-color: white;
 	color: #2CCED2;
 	font-weight: bolder;
+	cursor: pointer;
 }
 
