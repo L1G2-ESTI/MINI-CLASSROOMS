@@ -2,26 +2,24 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Acceuil Etudiant</title>
+	<title>Cours</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="assets/css/prof.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/prof.css">
 </head>
 <body>
-	<!-- <header>
+	<header>
 		<div class="container">
-			<div class="connexion">
-				<p><a href="">Se connecter</a> / <a href="">S'inscrire</a></p>
-			</div>
 			<nav>
 				<ul>
-					<li><a href="#">Accueil</a></li>
-					<li><a href="#">Cours</a></li>
-					<li><a href="#">Publication</a></li>
-					<li><a href="#"><img src="" class="img-profil">Profil</a></li>
+					<li class="logo-head">Mini Classroom</li>
+					<li class="nav-menu"><a href="#">Cours</a></li>
+					<li class="nav-menu"><a href="#">Publication</a></li>
+					<li class="nav-menu"><a href="#">Professeurs</a></li>
+					<li class="img-profil"><a href="#"><img src="../assets/img/profil.png" width="50px" height="50px"></a></li>
 				</ul>
 			</nav>	
 		</div>
-	</header> -->
+	</header>
 
 	<section>
 		<div class="baniere"></div>
