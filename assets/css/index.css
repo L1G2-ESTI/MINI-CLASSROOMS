@@ -1,0 +1,94 @@
+body{
+	background: url('../img/bg.jpg') fixed no-repeat;
+	background-size: 1370px 660px;
+}
+
+/*=========DESCRIPTION =========*/
+.container{
+	height: 540px;
+	width: 1270px;
+	margin: 70px auto 30px auto;
+	border-radius: 18px;
+	background: url('../img/fg.jpg') no-repeat;
+	background-size: 1300px 540px;
+}
+
+.container .description{
+	position: relative;
+	width: 23%;
+	top: 150px;
+	left: 170px;
+}
+
+
+.description .titre h1{
+	color: rgb(8, 41, 72);
+	margin-left: 10px;
+}
+
+.description .titre h1 span{
+	color: rgb(21, 182, 200);
+}
+
+.description .texte p{
+	color: rgb(154, 154, 154);
+}
+
+.description .bouton button{
+	background-color: rgb(21, 182, 200);
+	padding: 10px 30px;
+	border-radius: 20px;
+	border: none;
+	color: white;
+	font-weight: bold;
+	margin-left: 25px;
+}	
+
+/*==========NAVIGATION=========*/
+li, a{
+	text-decoration: none;
+	list-style-type: none;
+	color: rgb(21, 182, 200);
+	font-size: 18px;
+	padding: 10px;
+}
+
+.container .navigation ul{
+	display: flex;
+	justify-content: space-around;
+	margin-left: 64%;
+	margin-right: 45px;
+	position: relative;
+	top: 30px;
+}
+
+.container .navigation ul a:hover, .container .navigation ul a:focus{
+	border: 1px solid rgb(21, 182, 200);
+	color: white;
+	background-color: rgb(21, 182, 200);
+	border-radius: 20px;
+}
+
+footer{
+	width: 1270px;
+	margin: auto;
+	background-color: rgb(8, 41, 72); 
+	border-radius: 18px;
+	display: flex;
+	flex-direction: column; 
+}
+
+footer .foo{
+	display: flex;
+	justify-content: space-between;
+	margin-right: 10%;
+}
+
+footer .foo .lien .entete{
+	color: white;
+}
+
+footer .copyr p{
+	text-align: center;
+	color: white;
+}
