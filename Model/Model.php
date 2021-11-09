@@ -96,6 +96,22 @@
                 echo $e->getMessage();
             }
         }
+
+        public function listeProf(){
+            try{
+                $bdd = $this->dbconnect();
+
+                $req =' SELECT nom_prof,pre_prof,photoprof,nom_mat
+                        FROM Professseur
+                        NATURAL JOIN Modules 
+                    ' ;
+                $result = $bdd->prepare($req);
+                $result->execute();
+                return $result;
+            }catch(Exception $e){
+                echo $e->getMessage();
+            }
+        }
     }
     
 ?> 
