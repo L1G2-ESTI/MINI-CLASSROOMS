@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<title>Cours</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="assets/css/prof.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/prof.css">
 </head>
 <body>
 	<header>
@@ -63,7 +63,7 @@
 
 									</div>
 									<div class="corps-module">
-										<input type="button" onclick=window.location.href="https://www.facebook.com"; name="enter" value="Ouvrir">
+										<input type="button" onclick=window.location.href="cours.html"; name="enter" value="Ouvrir">
 									</div>
 								</div>
 							';
