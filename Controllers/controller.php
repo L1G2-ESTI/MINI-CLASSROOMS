@@ -1,5 +1,6 @@
 <?php
     require_once("Model/Model.php");
+    
     function acceuil(){
         try{
             require("Views/acceuilPrincipal.php");
@@ -50,7 +51,7 @@
         $log = $query->loginAdmin($email,sha1($password)); 
         $user_info = $log->fetch();
         if(!(empty($user_info))){
-            require("Views/liste-cours.php");
+            require("Views/crud.php");
         }else{
             require('Views/login.php');   
         }

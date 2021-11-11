@@ -5,15 +5,17 @@
 	$u = htmlspecialchars($_GET["u"]);
 
     if(!empty($action) && $action=="login"){
-		$categories = $_POST["categories"];
-		$email = $_POST["email"];
-		$mdp = $_POST["password"];
-		if($categories == "etudiant"){
-			loginEtudiant($email,$mdp);
-		}elseif($categories == "administrateur"){
-			loginAdmin($email,$mdp);
-		}else{
-			loginProf($email,$mdp);
+		if(isset($_POST)){
+			$categories = $_POST["categories"];
+			$email = $_POST["email"];
+			$mdp = $_POST["password"];
+			if($categories == "etudiant"){
+				loginEtudiant($email,$mdp);
+			}elseif($categories == "administrateur"){
+				loginAdmin($email,$mdp);
+			}else{
+				loginProf($email,$mdp);
+			}
 		}
 	}
 	elseif(!empty($action) && $action=="authentification"){
