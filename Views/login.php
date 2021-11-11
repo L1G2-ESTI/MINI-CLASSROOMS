@@ -6,7 +6,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>s'authentifier</title>
-	<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body id="body_login">
 	<form action="index.php?action=login"  method="post" class="log_form">
@@ -20,7 +20,6 @@
 				<option name="administrateur" value="admin">Administrateur</option>
 				<option name="professeur" value="professeur">Professeur</option>
 			</select>
-			<p class="forgot_pass"><a href="">Forgot your password ?</a></p>
 	  		<input type="submit" class="boutton_login" value="VALIDER">
 		</div>
 		<div class="content_right">
