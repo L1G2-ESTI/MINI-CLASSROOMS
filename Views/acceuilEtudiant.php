@@ -13,9 +13,10 @@
 				<ul>
 					<li class="logo-head">Mini Classroom</li>
 <<<<<<< HEAD
-					<li class="nav-menu"><a href="liste-cours.html">Modules</a></li>
-					<li class="nav-menu"><a href="publication.html">Publication</a></li>
-					<li class="nav-menu"><a href="liste-prof.html">Professeurs</a></li>
+					<li class="nav-menu"><a href="liste-cours.php">Modules</a></li>
+					<li class="nav-menu"><a href="publication.php">Publication</a></li>
+					<li class="nav-menu"><a href="liste-prof.php">Professeurs</a></li>
+					<li class="nav-menu"><a href="calendrier.html">Calendrier</a></li>
 					<li class="img-profil"><a href="#"><img src="assets/img/profil.png" width="50px" height="50px"></a></li>
 =======
 					<li class="nav-menu"><a href="#">Cours</a></li>

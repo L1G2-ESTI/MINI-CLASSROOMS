@@ -23,6 +23,7 @@
                                 <li class="nav-menu"><a href="acceuilEtudiant.html">Mes Cours</a></li>
                                 <li class="nav-menu"><a href="publication.html">Publication</a></li>
                                 <li class="nav-menu"><a href="liste-cours.html">Modules</a></li>
+                                <li class="nav-menu"><a href="calendrier.html">Calendrier</a></li>
                             </ul>
                         </nav>
                     </div>
