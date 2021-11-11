@@ -50,7 +50,7 @@
         $log = $query->loginAdmin($email,sha1($password)); 
         $user_info = $log->fetch();
         if(!(empty($user_info))){
-            require("Views/registre.php");
+            require("Views/liste-cours.php");
         }else{
             require('Views/login.php');   
         }

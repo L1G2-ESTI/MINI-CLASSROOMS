@@ -125,42 +125,42 @@
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
     class etudiant {
             public function CREATE(){
-        $bdd = $this->dbconnect();
-                
-		$nom = $_POST['nom_etud'];
-		$prenom = $_POST['pre_etud'];
-		$email = $_POST['mail_etud'];
-		$password = $_POST['mdp_etud'];
-		$genre = $_POST['sexe'];
-        $matricule=$_POST['num_matr'];
-        $niveau=$_POST['Niveau'];
-                
-        $insertUser = 'INSERT INTO etudiant (
-        `nom_etud`,
-        `pre_etud`, 
-        `mail_etud`,
-        `mdp_etud`,
-        `sexe`, 
-        `num_matr`,
-        `Niveau`) VALUES(:nom,:prenom,:email,:password,:genre,:matricule,:niveau)';
-        $prepaInsert= $connexion->prepare($insertUser);
-    
-        $insertion=$prepaInsert->execute( array(
-            ":nom"=>$nom,
-            ":prenom"=>$prenom,
-            ":email"=>$email,
-            ":password"=>$password,
-            ":genre"=>$genre,
-            ":matricule"=>$matricule,
-            ":niveau"=>$niveau));
-		if ($insertion) {
-			return True;
-		}else{
-			return False;
-		}
-            }
+                $bdd = $this->dbconnect();
+                        
+                $nom = $_POST['nom_etud'];
+                $prenom = $_POST['pre_etud'];
+                $email = $_POST['mail_etud'];
+                $password = $_POST['mdp_etud'];
+                $genre = $_POST['sexe'];
+                $matricule=$_POST['num_matr'];
+                $niveau=$_POST['Niveau'];
+                        
+                $insertUser = 'INSERT INTO etudiant (
+                `nom_etud`,
+                `pre_etud`, 
+                `mail_etud`,
+                `mdp_etud`,
+                `sexe`, 
+                `num_matr`,
+                `Niveau`) VALUES(:nom,:prenom,:email,:password,:genre,:matricule,:niveau)';
+                $prepaInsert= $connexion->prepare($insertUser);
+            
+                $insertion=$prepaInsert->execute( array(
+                    ":nom"=>$nom,
+                    ":prenom"=>$prenom,
+                    ":email"=>$email,
+                    ":password"=>$password,
+                    ":genre"=>$genre,
+                    ":matricule"=>$matricule,
+                    ":niveau"=>$niveau));
+                if ($insertion) {
+                    return True;
+                }else{
+                    return False;
+                }
+        }
         
-        public function DELETE{
+        public function DELETE() {
         $bdd = $this->dbconnect();
         $deleteUser="DELETE FROM etudiant WHERE num_matr = :id";
         $prepaDelete=$connexion->prepare($deleteUser);
@@ -176,7 +176,7 @@
             
         }
         
-        public function UPDATE{
+        public function UPDATE(){
         $bdd = $this->dbconnect();
             
 		$nom = $_POST['nom_etud'];

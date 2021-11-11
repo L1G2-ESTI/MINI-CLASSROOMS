@@ -15,12 +15,12 @@
 					<li class="nav-menu"><a href="#">Cours</a></li>
 					<li class="nav-menu"><a href="#">Emploi du Temps</a></li>
 					<li class="nav-menu"><a href="http://localhost/MINI-CLASSROOMS/index.php?u=listeProf">Professeurs</a></li>
-					<li class="img-profil"><a href="#"><?php echo '<img src="'.$_SESSION['photo'].'"width="50px" height="50px"';?></a></li>
+					<!-- <li><a href="#"><?php echo '<img  class="img-profil" src="'.$_SESSION['photo'].'"width="50px" height="50px"';?></a></li> -->
 				</ul>
 			</nav>	
 		</div>
 	</header>
-	<section>
+	<section>	
 		<div class="baniere"></div>
 		<?php
 			echo '<div>
