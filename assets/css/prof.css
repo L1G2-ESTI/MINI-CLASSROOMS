@@ -38,6 +38,13 @@ nav ul .nav-menu a:hover, nav ul .nav-menu a:focus{
 }
 
 nav ul .img-profil{
+	margin-left: 800px;
+	border-radius: 100px;
+	position: absolute;
+	top: 430px;
+	left: 46px;
+	border: 6px solid white;
+	box-shadow: 1px 1px 2px white;
 	margin-left: 700px;
 }
 
