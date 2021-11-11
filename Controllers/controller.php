@@ -1,6 +1,14 @@
 <?php
     require_once("Model/Model.php");
-
+    function acceuil(){
+        try{
+            require("Views/acceuilPrincipal.php");
+        }catch (Exception $e){
+            die($e->getMessage());
+        }
+    }
+        
+    
     function authentification(){
         try{
             require("Views/login.php");

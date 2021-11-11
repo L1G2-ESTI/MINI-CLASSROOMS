@@ -15,10 +15,14 @@
 		}else{
 			loginProf($email,$mdp);
 		}
-	}elseif(!empty($u) && $u=="listeProf"){
+	}
+	elseif(!empty($action) && $action=="authentification"){
+		authentification();
+	}
+	elseif(!empty($u) && $u=="listeProf"){
 		listeProf();
 	}
 	else{
-		authentification();
+		acceuil();
 	}
 ?>  

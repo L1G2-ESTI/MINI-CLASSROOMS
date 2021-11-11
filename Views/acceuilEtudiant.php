@@ -11,22 +11,11 @@
 		<div class="container">
 			<nav>
 				<ul>
-					<li>logo</li>
-					<li><a href="http://localhost/MINI-CLASSROOMS/index.php?u=listeProf">les Professeurs</a></li>
-					<li><a href="#">Emploi du temps</a></li>
-					<li>
-						<?php
-						echo '<div>
-							<img src="'.$_SESSION['photo'].'"
-							class="img-profil" width="25px" height="25px"';
-						?>
-					</li>
-
 					<li class="logo-head">Mini Classroom</li>
 					<li class="nav-menu"><a href="#">Cours</a></li>
-					<li class="nav-menu"><a href="#">Publication</a></li>
-					<li class="nav-menu"><a href="#">Professeurs</a></li>
-					<li class="img-profil"><a href="#"><img src="../assets/img/profil.png" width="50px" height="50px"></a></li>
+					<li class="nav-menu"><a href="#">Emploi du Temps</a></li>
+					<li class="nav-menu"><a href="http://localhost/MINI-CLASSROOMS/index.php?u=listeProf">Professeurs</a></li>
+					<li class="img-profil"><a href="#"><?php echo '<img src="'.$_SESSION['photo'].'"width="50px" height="50px"';?></a></li>
 				</ul>
 			</nav>	
 		</div>
