@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<title>Cours</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="../assets/css/prof.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/prof.css">
 </head>
 <body>
 	<header>
@@ -12,10 +12,10 @@
 			<nav>
 				<ul>
 					<li class="logo-head">Mini Classroom</li>
-					<li class="nav-menu"><a href="#">Cours</a></li>
-					<li class="nav-menu"><a href="#">Publication</a></li>
-					<li class="nav-menu"><a href="#">Professeurs</a></li>
-					<li class="img-profil"><a href="#"><img src="../assets/img/profil.png" width="50px" height="50px"></a></li>
+					<li class="nav-menu"><a href="liste-cours.html">Modules</a></li>
+					<li class="nav-menu"><a href="publication.html">Publication</a></li>
+					<li class="nav-menu"><a href="liste-prof.html">Professeurs</a></li>
+					<li class="img-profil"><a href="#"><img src="assets/img/profil.png" width="50px" height="50px"></a></li>
 				</ul>
 			</nav>	
 		</div>
