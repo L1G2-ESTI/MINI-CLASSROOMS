@@ -165,7 +165,7 @@
             }          
         }
     
-        public function UPDATE($nom,$prenom,$email,$password,$niveau){
+        public function UPDATE($id,$nom,$prenom,$email,$password,$niveau){
            try{
             $bdd = $this->dbconnect();
 

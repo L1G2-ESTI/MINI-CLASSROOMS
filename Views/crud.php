@@ -59,8 +59,8 @@
                             <td>'.$row["adresse"].'</td>
                             <td>'.$row["sexe"].'</td>
                             <td>
-                                <a href="index.php?modifierEtudiant&&id='.$row["num_matr"].'" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                                <a href="index.php?supprimerEtudiant&&id='.$row["num_matr"].'" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+                                <a href="index.php?action=update" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+                                <a href="index.php?action=supprimerEtudiant&&id='.$row["num_matr"].'" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
                             </td>
                         </tr>';  
 

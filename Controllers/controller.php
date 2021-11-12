@@ -93,4 +93,22 @@
         } 
         header("Location:index.php?action=login");
     }
+
+    function update(){
+        try {
+            require("Views/update.php");
+        }catch(Exception $e){
+            die($e->getMessage());
+        } 
+    }
+    function modifierEtudiant($id,$nom,$prenom,$email,$password,$niveau){
+        try {
+            $query = new query_data();
+            $log = $query->UPDATE($id,$nom,$prenom,$email,$password,$niveau); 
+            session_start();
+            header("Location:index.php?action=login");
+        }catch(Exception $e){
+            die($e->getMessage());
+        } 
+    }
 ?>

@@ -34,6 +34,12 @@
 		}
 
 	}
+	elseif(!empty($action) && $action=="modifierEtudiant"){
+		$id = htmlspecialchars($_GET["id"]);
+		if(isset($_POST)){
+		modifierEtudiant($id,$nom,$prenom,$email,$password,$niveau);
+		}
+	}
 	elseif(!empty($u) && $u=="listeProf"){
 		listeProf();
 	}
