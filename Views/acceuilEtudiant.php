@@ -11,10 +11,11 @@
 		<div class="container">
 			<nav>
 				<ul>
-					<li class="logo-head">Mini Classroom</li>
+					<li class="logo-head">Mini Classroom</li> 	
 					<li class="nav-menu"><a href="#">Cours</a></li>
 					<li class="nav-menu"><a href="#">Emploi du Temps</a></li>
 					<li class="nav-menu"><a href="http://localhost/MINI-CLASSROOMS/index.php?u=listeProf">Professeurs</a></li>
+
 					<!-- <li><a href="#"><?php echo '<img  class="img-profil" src="'.$_SESSION['photo'].'"width="50px" height="50px"';?></a></li> -->
 				</ul>
 			</nav>	

@@ -1,5 +1,6 @@
 <?php
     require_once("Model/Model.php");
+
     
     function acceuil(){
         try{
@@ -51,7 +52,9 @@
         $log = $query->loginAdmin($email,sha1($password)); 
         $user_info = $log->fetch();
         if(!(empty($user_info))){
-            require("Views/crud.php");
+            $affichage = $query->etudiant(); 
+            session_start();
+            require("Views/crud.php"); 
         }else{
             require('Views/login.php');   
         }
@@ -67,5 +70,27 @@
             die($e->getMessage());
         }
         
+    }
+
+    function Etudiant(){
+        try {
+            $query = new query_data();
+            $log = $query->etudiant(); 
+            session_start();
+            require("Views/crud.php");    
+        }catch(Exception $e){
+            die($e->getMessage());
+        } 
+    }
+
+    function AjoutEtudiant($nom,$prenom,$email,$password,$genre,$matricule,$niveau){
+        try {
+            $query = new query_data();
+            $log = $query->CREATE($nom,$prenom,$email,$password,$genre,$matricule,$niveau); 
+            session_start();
+        }catch(Exception $e){
+            die($e->getMessage());
+        } 
+        header("Location:index.php?action=login");
     }
 ?>

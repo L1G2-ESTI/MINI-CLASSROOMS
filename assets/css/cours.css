@@ -1,0 +1,97 @@
+nav{
+	width: 100%;
+	background: white;
+	border-bottom: 1px solid #B8CBD0;
+}
+nav ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+a, li{
+	list-style-type: none;
+	text-decoration: none;
+}
+nav ul li{
+	margin-right: 30px;
+}
+
+nav ul .nav-menu, nav ul .logo-head{
+	padding: 16px 0px;
+}
+
+nav ul .nav-menu a{
+	color: rgb(21, 182, 200);
+	font-size: 19px;
+	padding: 7px;
+}
+
+nav ul .nav-menu a:hover, nav ul .nav-menu a:focus{
+	border: 1px solid rgb(21, 182, 200);
+	color: white;
+	background-color: rgb(21, 182, 200);
+	border-radius: 20px;
+}
+
+nav ul .img-profil{
+	margin-left: 700px;
+}
+
+nav ul .img-profil a img{
+	border-radius: 50px;
+}
+
+nav ul .img-profil a img:hover{
+	border: none;
+	background-color: transparent;
+}
+
+
+.container{
+	margin: 35px 140px 15px 90px;
+}
+
+.baniere figure img{
+	border-radius: 10px;
+}
+
+.content{
+	margin: 20px 0px 20px 40px;
+	display: flex;
+}
+
+.content .message{
+	width: 25%;
+	padding: 10px;
+	border-radius: 10px;
+	border: 1px solid #B8CBD0;
+}
+
+.content .affiche a{
+	text-decoration: none;
+	color: grey;
+}
+
+.content .affiche{
+	display: flex;
+	flex-direction: column;
+}
+
+.content .affiche .pub{
+	box-shadow: 1px 2px 10px grey;
+}
+
+.content .affiche .pub a:hover{
+	color: #2a9d8f;
+}
+
+.content .affiche .pub , .content .affiche .dev-content{
+	border: 1px solid #B8CBD0;
+	padding: 13px;
+	margin-bottom: 28px;
+	border-radius: 10px;
+}
+
+.content .affiche .dev-content:hover{
+	background-color: #DBF9E7;
+}

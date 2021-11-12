@@ -11,7 +11,7 @@
 			$mdp = $_POST["password"];
 			if($categories == "etudiant"){
 				loginEtudiant($email,$mdp);
-			}elseif($categories == "administrateur"){
+			}elseif($categories == "admin"){
 				loginAdmin($email,$mdp);
 			}else{
 				loginProf($email,$mdp);
@@ -20,6 +20,19 @@
 	}
 	elseif(!empty($action) && $action=="authentification"){
 		authentification();
+	}
+	elseif(!empty($action) && $action=="AjoutEtudiant"){
+		if(isset($_POST)){
+				$nom = $_POST['nom_etud'];
+                $prenom = $_POST['pre_etud'];
+                $email = $_POST['mail_etud'];
+                $password = $_POST['mdp_etud'];
+                $genre = $_POST['sexe'];
+                $matricule=$_POST['num_matr'];
+                $niveau=$_POST['Niveau'];
+				AjoutEtudiant($nom,$prenom,$email,$password,$genre,$matricule,$niveau);
+		}
+
 	}
 	elseif(!empty($u) && $u=="listeProf"){
 		listeProf();
