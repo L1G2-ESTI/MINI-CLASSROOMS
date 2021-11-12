@@ -65,18 +65,25 @@ section .baniere{
 	flex-direction: row;
 }
 
-.container .selection{
-	background-color: blueviolet;
-	border: 1px solid blueviolet;
-	flex: 1;
-	height: 600px;
+.container .ajout{
+	margin: 210px 0px;
+}
+
+.container .ajout button, .container .ajout input{
+	margin: 9px 0px;
+	width: 90%;
+	height: 40px;
+	background-color: rgb(21, 182, 200);
+	border-color: rgb(21, 182, 200);
+	border-radius: 5px;
+	cursor: pointer;
 }
 
 .container .publication{
-	border: 1px solid greenyellow;
 	flex: 3;
 	height: 600px;
 	flex-direction: column;
+	flex-wrap: wrap;
 }
 /*HEAD PUBLICATION*/
 .container .publication .head{

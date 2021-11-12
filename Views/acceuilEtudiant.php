@@ -4,14 +4,25 @@
 	<meta charset="utf-8">
 	<title>Cours</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="assets/css/prof.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/prof.css">
 </head>
 <body>
 	<header>
 		<div class="container">
 			<nav>
 				<ul>
+<<<<<<< HEAD
 					<li class="logo-head">Mini Classroom</li> 	
+=======
+					<li class="logo-head">Mini Classroom</li>
+<<<<<<< HEAD
+					<li class="nav-menu"><a href="liste-cours.php">Modules</a></li>
+					<li class="nav-menu"><a href="publication.php">Publication</a></li>
+					<li class="nav-menu"><a href="liste-prof.php">Professeurs</a></li>
+					<li class="nav-menu"><a href="calendrier.html">Calendrier</a></li>
+					<li class="img-profil"><a href="#"><img src="assets/img/profil.png" width="50px" height="50px"></a></li>
+=======
+>>>>>>> 0e2bb9c8fdc1e8999ff40cffc34bbb875f3d4541
 					<li class="nav-menu"><a href="#">Cours</a></li>
 					<li class="nav-menu"><a href="#">Emploi du Temps</a></li>
 					<li class="nav-menu"><a href="http://localhost/MINI-CLASSROOMS/index.php?u=listeProf">Professeurs</a></li>
@@ -57,7 +68,7 @@
 
 									</div>
 									<div class="corps-module">
-										<input type="button" onclick=window.location.href="https://www.facebook.com"; name="enter" value="Ouvrir">
+										<input type="button" onclick=window.location.href="cours.html"; name="enter" value="Ouvrir">
 									</div>
 								</div>
 							';

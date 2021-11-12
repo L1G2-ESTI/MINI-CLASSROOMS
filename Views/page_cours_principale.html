@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Page cours principale</title>
+	<link rel="stylesheet" type="text/css" href="../assets/css/cours_princ.css">
+	<meta charset="utf-8">
+</head>
+<body>
+	<header>
+			<nav>
+				<ul>
+					<li class="logo-head">Mini Classroom</li>
+					<li class="nav-menu"><a href="liste-cours.html">Modules</a></li>
+					<li class="nav-menu"><a href="publication.html">Publication</a></li>
+					<li class="nav-menu"><a href="liste-prof.html">Professeurs</a></li>
+					<li class="nav-menu"><a href="calendrier.html">Calendrier</a></li>
+					<li class="img-profil"><a href="#"><img src="../assets/img/profil.png" width="50px" height="50px"></a></li>
+				</ul>
+			</nav>	
+	</header>
+
+	<div class="container">
+		<div class="description">
+			<div class="logo_mod" style="display: flex;">
+				<img src="../assets/img/logo/devoir.png" style="margin-top: 18px; margin-right: 18px;" width="40px" height="40px" style="border-radius:10px">
+				<div class="about">
+					<h1 style="color: #2a9d8f;">Nom du module</h1>
+					<p>Nom professeur + date</p>
+					<div class="dead_point" style="display: flex; flex-direction: row;">
+						<p>100 points</p>
+						<p style="margin-left: 490px;">Date limite : 22 Décembre 2202. 22:56</p>
+					</div>
+					<hr style="border-color: #2a9d8f;">
+					<p>Indication sur le devoir ou fichier s'il y en a</p>
+					<hr style="border-color: #e5e7e6;">
+					<p>Commentaire ajoutés au cours</p>
+					<a href="" style="color: #2a9d8f;">Ajouter un commentaire à un cours</a>
+				</div>
+			</div>
+		</div>
+		<form method="POST" action="">
+			<div class="devoir" style="display: flex; flex-direction: column;">
+				<div class="content">
+					<div class="head" style="display: flex; padding: 20px;">
+						<h2>Votre devoir</h2>
+						<p style="margin: 27px 3px 0px 70px;">situation</p>
+					</div>
+					<div class="fichier">
+						<input type="file" name="fichier">
+						<input type="file" name="fichier">
+					</div>
+					<div class="bouton">
+						<button>Rendre le devoir</button>
+					</div>
+				</div>
+				<div class="commentaire">
+					<p>Commentaire privés</p>
+					<a href="" style="color: #2a9d8f;">Ajouter un commentaire pour Nom du professeur</a>
+				</div>
+			</div>
+		</form>
+	</div>
+
+</body>
+</html>
