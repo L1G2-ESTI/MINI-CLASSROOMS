@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Home -Mini classroom</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/index.css">
 </head>
+
 <body>
 	<div class="container" id="accueil">
 		<div class="navigation">
@@ -21,7 +23,7 @@
 			</div>
 			<div class="texte">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
 			</div>
 			<div class="bouton">
 				<button>Learn More</button>
@@ -33,7 +35,7 @@
 		<div class="foo">
 			<div class="logo">
 				<figure>
-					<img src="assets/img/baniere.jpg" width= "160px" height="160px">
+					<img src="assets/img/baniere.jpg" width="160px" height="160px">
 				</figure>
 			</div>
 			<div class="lien">
@@ -55,4 +57,5 @@
 		let date = document.getElementById('date').textContent = year;
 	</script>
 </body>
+
 </html>

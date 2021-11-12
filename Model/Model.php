@@ -111,8 +111,21 @@
                 echo $e->getMessage();
             }
         }
-    
-/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+        
+        public function etudiantId($id){
+            try{
+                $bdd = $this->dbconnect();
+
+                $req =' SELECT * FROM Etudiant WHERE num_matr='.$id.'';
+                $result = $bdd->prepare($req);
+                $result->execute();
+                return $result;
+            }catch(Exception $e){
+                echo $e->getMessage();
+            }
+        }
+
+
         public function etudiant(){
             try{
                 $bdd = $this->dbconnect();
@@ -152,24 +165,23 @@
             }
         }
     
-        public function DELETE() {
+        public function DELETE($id) {
             try{
                 $bdd = $this->dbconnect();
-                $deleteUser="DELETE FROM etudiant WHERE num_matr = :id";
+                $deleteUser='DELETE FROM Etudiant WHERE num_matr ="'.$id.'"';
                 $prepaDelete=$bdd->prepare($deleteUser);
-                $prepaDelete->bindValue(
-                ":id",$_GET['id'],PDO::PARAM_INT);
                 $suppresion=$prepaDelete->execute(); 
             }catch(Exception $e){
                 die($e->getMessage());
             }          
         }
     
-        public function UPDATE($id,$nom,$prenom,$email,$password,$niveau){
+        public function UPDATE($id,$nom,$prenom,$email,$password,$niveau,$adresse){
            try{
             $bdd = $this->dbconnect();
 
-            $UpdatetUser = "UPDATE etudiant SET `nom_etud`=:nom, `pre_etud`=:prenom, `mail_etud`=:email, `mdp_etud`=:password, `Niveau`=:niveau WHERE num_matr=:id";
+            $UpdatetUser = "UPDATE etudiant SET `nom_etud`=:nom, `pre_etud`=:prenom, `mail_etud`=:email,
+            `mdp_etud`=:password, `adresse`=:adresse, `Niveau`=:niveau, WHERE num_matr=:id";
             $prepaInsert= $bdd->prepare($UpdatetUser);
 
             $update=$prepaInsert->execute( array(
@@ -178,6 +190,7 @@
                 ":email"=>$email,
                 ":password"=>$password,
                 ":niveau"=>$niveau,
+                ":adresse"=>$adresse,
                 ":id"=>$id));
            }catch(Exception $e){
                die($e->getMessage());
@@ -186,4 +199,3 @@
     }
         
 }
-?>

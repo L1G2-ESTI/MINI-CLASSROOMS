@@ -1,42 +1,31 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<title>Cours</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="../assets/css/prof.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/prof.css">
 </head>
+
 <body>
 	<header>
 		<div class="container">
 			<nav>
 				<ul>
-<<<<<<< HEAD
-					<li class="logo-head">Mini Classroom</li> 	
-=======
-					<li class="logo-head">Mini Classroom</li>
-<<<<<<< HEAD
-					<li class="nav-menu"><a href="liste-cours.php">Modules</a></li>
-					<li class="nav-menu"><a href="publication.php">Publication</a></li>
-					<li class="nav-menu"><a href="liste-prof.php">Professeurs</a></li>
-					<li class="nav-menu"><a href="calendrier.html">Calendrier</a></li>
-					<li class="img-profil"><a href="#"><img src="assets/img/profil.png" width="50px" height="50px"></a></li>
-=======
->>>>>>> 0e2bb9c8fdc1e8999ff40cffc34bbb875f3d4541
-					<li class="nav-menu"><a href="#">Cours</a></li>
-					<li class="nav-menu"><a href="#">Emploi du Temps</a></li>
-					<li class="nav-menu"><a href="http://localhost/MINI-CLASSROOMS/index.php?u=listeProf">Professeurs</a></li>
-
-					<!-- <li><a href="#"><?php echo '<img  class="img-profil" src="'.$_SESSION['photo'].'"width="50px" height="50px"';?></a></li> -->
+							<li class="logo-head">Mini Classroom</li>
+							<li class="nav-menu"><a href="#">Emploi du Temps</a></li>
+							<li class="nav-menu"><a href="http://localhost/MINI-CLASSROOMS/index.php?u=listeProf">Professeurs</a></li>
+							<!-- <li><a href="#"><?php echo '<img  class="img-profil" src="' . $_SESSION['photo'] . '"width="50px" height="50px"'; ?></a></li> -->
 				</ul>
-			</nav>	
+			</nav>
 		</div>
 	</header>
-	<section>	
+	<section>
 		<div class="baniere"></div>
 		<?php
-			echo '<div>
-					<img src="'.$_SESSION['photo'].'"
+		echo '<div>
+					<img src="' . $_SESSION['photo'] . '"
 					class="profil-prof" width="150px" height="150px"
 				</div>
 			';
@@ -45,39 +34,40 @@
 	<section>
 		<div class="container-prof">
 			<div class="prof-information">
-				<h3><?=$_SESSION["username"]?></h3>
+				<h3><?= $_SESSION["username"] ?></h3>
 				<div class="reseaux">
 					<img src="assets/img/logo/g+.png" width="20px" height="20px">
-					<li><a href=""><?=$_POST["email"]?></a></li>
+					<li><a href=""><?= $_POST["email"] ?></a></li>
 				</div>
 				<div class="reseaux">
 					<img src="assets/img/logo/linkedin.png" width="20px" height="20px">
-					<li><a href=""><?=$_POST["email"]?></a></li>
+					<li><a href=""><?= $_POST["email"] ?></a></li>
 				</div>
 			</div>
-				<div class="prof-module">
-					<?php 
-						while ($user_cours=$cours->fetch()){
-							echo '
+			<div class="prof-module">
+				<?php
+				while ($user_cours = $cours->fetch()){
+					echo '
 								<div class="card-module">
 									<div class="fond-haut">
-										<h1>'.$user_cours["nom_mat"].'</h1>
+										<h1>' . $user_cours["nom_mat"] . '</h1>
 									</div>
 									<div class="logo-module">
-										<p>'.$user_cours["id_module"].'</p>
+										<p>' . $user_cours["id_module"] . '</p>
 
 									</div>
 									<div class="corps-module">
-										<input type="button" onclick=window.location.href="cours.html"; name="enter" value="Ouvrir">
+										<input type="button" onclick=window.location.href="Views/page_cours_principale.html"; name="enter" value="Ouvrir">	
 									</div>
 								</div>
-							';
-						}
-					?>
-				</div>
+						';
+				}
+				?>
+			</div>
 
 		</div>
 	</section>
 
 </body>
+
 </html>
